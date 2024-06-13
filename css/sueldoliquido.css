@@ -204,7 +204,7 @@ input:valid~label {
     ul {
         position: fixed;
         width: 95%;
-        height: 84vh;
+        height: 60vh;
         background: #060329;
         top: 280px;
         left: -100%;
@@ -216,7 +216,7 @@ input:valid~label {
     }
 
     nav ul li {
-        margin: 50px 0;
+        margin: 20px 0;
     }
 
     nav ul li a {

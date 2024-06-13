@@ -351,8 +351,8 @@ input:valid~label {
 
     ul {
         position: fixed;
-        width: 45%;
-        height: 84vh;
+        width: 95%;
+        height: 60vh;
         background: #060329;
         top: 320px;
         left: -100%;
@@ -364,7 +364,7 @@ input:valid~label {
     }
 
     nav ul li {
-        margin: 50px 0;
+        margin: 30px 0;
     }
 
     nav ul li a {
@@ -409,22 +409,28 @@ input:valid~label {
 
     .wrapperindem {
         position: relative;
-        width: 500px;
-        height: 80vh;
+        width: 470px;
+        height: 60vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 90px;
-
     }
-
+    .input2 {
+        margin-right: 20px;
+        border: none;
+        outline: none;
+        background: none;
+        width: 300px;
+        margin-top: 40px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
     #respuesta {
-
         font-size: 18px;
-        height: 100px;
-        width: 350px;
-        margin-left: 50px;
-        margin-bottom: 40px;
-        padding: 30px;
+        height: 150px;
+        width: 220px;
+        margin-left: 80px;
+        padding: 20px;
         text-align: center;
     }
 }

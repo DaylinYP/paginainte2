@@ -283,7 +283,7 @@ h2 {
     ul {
         position: fixed;
         width: 95%;
-        height: 80vh;
+        height: 60vh;
         background: #060329;
         top: 280px;
         left: -100%;
@@ -295,7 +295,7 @@ h2 {
     }
 
     nav ul li {
-        margin: 50px 0;
+        margin: 20px 0;
     }
 
     nav ul li a {
