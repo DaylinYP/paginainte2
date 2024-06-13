@@ -241,6 +241,7 @@ input:valid~label {
     text-align: center;
     text-shadow: 1px 0px;
 }
+
 .input2 {
     border: none;
     outline: none;
@@ -249,4 +250,181 @@ input:valid~label {
     margin-top: 40px;
     padding-right: 10px;
     font-size: 17px;
+}
+
+.wrapper {
+    margin-top: 130px;
+    margin-left: 15%;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 50px 0 rgb(0, 39, 211);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp1,
+#inp2,
+#inp3,
+#nombreIngresado,
+#añosTrabajados,
+#mesesTrabajados,
+#salarioPendiente,
+#deudas,
+#sueldoBase {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 160px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.submit {
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 70px;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#btnEliminarA,
+#btnEliminarB {
+    width: 100px;
+    font-size: 13px;
+}
+
+#botonesAYE {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+#maquetacion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*MENU DE HAMBURGUESA*/
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 45%;
+        height: 84vh;
+        background: #060329;
+        top: 320px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    li a.hover,
+    li a.active {
+        background: none;
+        color: rgb(0, 20, 46);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+
+    .logos {
+        margin-top: 180px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .imagen {
+        margin: 10px 0;
+    }
+
+    .bodyindem {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapperindem {
+        position: relative;
+        width: 500px;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 90px;
+
+    }
+
+    #respuesta {
+
+        font-size: 18px;
+        height: 100px;
+        width: 350px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        padding: 30px;
+        text-align: center;
+    }
 }

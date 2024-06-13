@@ -100,10 +100,12 @@ li a:hover {
     margin-left: 300px;
     margin-bottom: 50px;
 }
-#maquetación{
+
+#maquetación {
     display: grid;
     grid-template-columns: auto auto;
 }
+
 /* Contenedor principal */
 .content-wrapper {
     display: flex;
@@ -123,6 +125,7 @@ li a:hover {
     flex: 2;
     min-width: 450px;
 }
+
 table {
     background-color: rgb(15, 14, 14);
     color: rgb(255, 255, 255);
@@ -264,16 +267,19 @@ h2 {
     .checkbtn {
         display: block;
     }
+
     .content-wrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .wrapper, .table-wrapper {
+    .wrapper,
+    .table-wrapper {
         width: 100%;
         min-width: auto;
         margin-bottom: 50px;
     }
+
     ul {
         position: fixed;
         width: 95%;
@@ -395,11 +401,11 @@ h2 {
         align-items: center;
         margin-left: 30%;
     }
-    
+
     #maquetacion {
         display: flex;
         flex-direction: column;
-       
+
     }
 
     table {
