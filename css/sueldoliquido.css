@@ -1,3 +1,4 @@
+/* Reseteo y estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +68,6 @@ li a:hover {
 }
 
 /*MENU DE HAMBURGUESA*/
-
 .enlace {
     position: absolute;
     padding: 20px 50px;
@@ -87,13 +87,8 @@ li a:hover {
     display: none;
 }
 
-/*PAGINA 3*/
-span {
-    display: flex;
-}
-
+/* Estilos para formularios y secciones */
 section {
-    margin-left: 120px;
     position: relative;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -104,6 +99,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
+    margin: 10px;
 }
 
 .inputbox input {
@@ -135,26 +131,12 @@ section {
     transition: all 0.5s ease-in-out;
 }
 
-input:focus~label,
-input:valid~label {
+input:focus ~ label,
+input:valid ~ label {
     top: -5px;
 }
 
-/*#####################################################*/
-#formulario2 {
-    margin-left: 150px;
-    position: relative;
-    width: 400px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(55px);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 3rem;
-}
-
+/* Estilos adicionales */
 .logo51 {
     height: 600px;
     width: 500px;
@@ -165,7 +147,6 @@ input:valid~label {
 
 .buttonSueldoLiquido {
     color: rgb(0, 0, 0);
-    margin-top: 50px;
     border-radius: 55px;
     width: 500px;
     height: 50px;
@@ -176,7 +157,6 @@ input:valid~label {
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.4s ease;
-    margin-left: 700px;
 }
 
 .buttonSueldoLiquido:hover {
@@ -190,11 +170,30 @@ input:valid~label {
     height: 100px;
     font-size: 20px;
     color: black;
-    margin-left: 660px;
-    margin-bottom: 30px;
     padding: 30px;
     text-align: center;
     text-shadow: 1px 0px;
+}
+
+/* Contenedores principales */
+.contenFormularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.contenFormularios span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-y-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /* Media Query para pantallas menores a 768px */
@@ -206,8 +205,8 @@ input:valid~label {
 
     ul {
         position: fixed;
-        width: 100%;
-        height: 100vh;
+        width: 95%;
+        height: 84vh;
         background: #060329;
         top: 280px;
         left: -100%;
@@ -223,7 +222,7 @@ input:valid~label {
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     li a.hover,
@@ -232,7 +231,7 @@ input:valid~label {
         color: rgb(0, 20, 46);
     }
 
-    #check:checked~ul {
+    #check:checked ~ ul {
         left: 0;
     }
 
@@ -254,15 +253,14 @@ input:valid~label {
         margin: 10px 0;
     }
 
-    span {
+    .contenFormularios span {
         display: grid;
         grid-template-columns: auto;
     }
 
     .formulario1,
     #formulario2 {
-        margin-bottom: 80px;
-        margin-left: 10%;
+        margin-bottom: 100px;
         width: 300px;
     }
 

@@ -147,8 +147,8 @@ li a:hover {
 
     ul{
         position: fixed;
-        width: 50%;
-        height: 100vh;
+        width: 40%;
+        height: 85vh;
         background: #060329;
         top: 280px;
         left: -100%;
@@ -165,7 +165,7 @@ li a:hover {
         margin: 50px 0;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 15px;
     }
     li a.hover, li a.active{
         background: none;
